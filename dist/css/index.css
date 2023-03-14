@@ -1,0 +1,298 @@
+/* SECTION ABOUT */
+.about {
+    background: url('../images/png/bg-about.png');
+    background-position: center;
+}
+
+.about-top .about-top__img {
+    width: 507px;
+    height: 610px;
+}
+
+.about-top .about-top__img img {
+    width: inherit;
+    height: inherit;
+}
+
+.about-top .about-top__text {
+    width: 555px;
+    color: #fff;
+}
+
+.about-bottom .about-bottom__left {
+    width: 552px;
+    color: #fff;
+}
+
+.about-bottom .about-bottom__left ul li {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.6;
+}
+
+.about-bottom .about-bottom__left ul li span {
+    font-weight: 700;
+}
+
+.about-bottom__btns__btn1 {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%), rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    border: 1px solid;
+}
+
+.about-bottom .about-bottom__left ul li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: #00BF63;
+    left: 0;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.about-bottom .about-bottom__right {
+    width: 694px;
+    height: 413px;
+    position: relative;
+}
+
+.about-bottom__right-abso {
+    position: absolute;
+    top: 14px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 545px;
+    height: 356px;
+}
+
+.about-bottom__right-abso iframe {
+    width: inherit;
+    height: inherit;
+}
+
+/* SECTION Advantages*/
+.advantages {
+    background: url('../images/png/bg-advantages.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.advantages__info {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(6px);
+    border-radius: 42px;
+    padding: 54px 40px 44px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+    gap: 44px 126px;
+}
+
+.advantages__info__item {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    align-items: center;
+}
+
+.advantages__info__item p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 157.4%;
+}
+
+.advantages__info__item-img {
+    width: 64px;
+    height: 64px;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+    background: #FFBF44;
+    box-shadow: 0px 17px 17px rgba(255, 191, 67, 0.28);
+}
+
+.advantages__info__item:nth-child(-n + 3) .advantages__info__item-img {
+    background: #2BE3A0;
+    box-shadow: 0px 17px 17px rgba(43, 227, 160, 0.28);
+}
+
+/* -------------------------------- */
+.reviews {
+    background: url('../images/png/bg-rewiev.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.reviews__info {
+    position: relative;
+    width: 1069px;
+    height: 490px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    border-radius: 61px;
+    padding: 67px 67px 51px;
+}
+
+.swiper1 {
+    position: initial !important;
+    overflow: hidden;
+}
+.reviews__info .swiper-button-prev, .reviews__info .swiper-button-next{
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    background: #2BE3A0;
+    position: absolute;
+    top: 420px;
+}
+.reviews__info .swiper-button-prev{
+    left: 140px;  
+}
+.reviews__info .swiper-button-next{
+    left: 214px;    
+}
+.reviews__info .swiper-button-prev::after, .reviews__info .swiper-button-next::after{
+    font-size: 20px;
+    color: #000;
+}
+.reviews__info .swiper-slide-img{
+    width: 308px;
+    height: 308px;
+}
+.reviews__info .swiper-slide-text{
+   max-width: 613px;
+}
+.reviews__info .swiper-slide-img img{
+    width: inherit;
+    height: inherit;
+}
+/* -------------------------------- */
+.requirements{
+    background: url('../images/png/br-requirements.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.requirements__info__left-img{
+    width: 601px;
+    height: 394px;
+    position: relative;
+}
+.requirements__info__left-img-abso1,
+.requirements__info__left-img-abso2,
+.requirements__info__left-img-abso3{
+    position: absolute;
+}
+.requirements__info__left-img-abso1{
+    width: 322px;
+    height: 322px;
+    top: 0;
+    left: -16px;
+    z-index: -1;
+    animation: rotateGL infinite linear 10s;
+
+}
+@keyframes rotateGL{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.requirements__info__left-img-abso2{
+    top: 150px;
+    right: 210px;
+    width: 53px;
+    height: 67px;
+    animation: onOff infinite linear 2s;
+
+}
+.requirements__info__left-img-abso3{
+    top: 150px;
+    right: 5px;
+    width: 53px;
+    height: 67px;
+    animation: onOff infinite linear 2s;
+}
+@keyframes onOff{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.requirements__info__right li{
+    padding-left: 53px;
+    position: relative;
+    width: 60%;
+}
+.requirements__info__right li::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 19px;
+    height: 19px;
+    background: #3BE893;
+    border-radius: 50%;
+}
+
+.requirements__info__right-links img{
+    width: 219px;
+    height: 69px;
+}
+.application{
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%)
+    ,url('../images/png/bg-application.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.application__info__left{
+    max-width: 736px;
+}
+.application__info__right{
+    width: 343px;
+}
+.application__info__right-input{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    padding: 15px 0 15px 34px;
+    border: 1px solid transparent;
+}
+.application__info__right-input:active{
+    border-color: #2BE3A0;
+}
+.application__info__right-input input{
+    background: transparent;
+    color: #FFFFFF;
+    opacity: 0.6;
+}
+.application__info__right__btn{
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    padding: 15px 0;
+    color: #000000;
+}
+.title-map{
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.76) 0%, #000000 100%);
+    opacity: 0.67;
+}
+.requirements__map{
+    height: 500px;
+    background: url('../images/png/requirements__map.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

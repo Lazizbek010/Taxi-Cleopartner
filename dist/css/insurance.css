@@ -1,0 +1,131 @@
+.banner {
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%),
+        url('../images/insurance/bg-ins-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+.banner .banner__info h1 {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.included-insurance {
+    background: url('../images/insurance/bg-included-insurance.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.included-insurance__left {
+    max-width: 679px;
+}
+
+.included-insurance__left .about-bottom__left ul li {
+    position: relative;
+}
+
+.included-insurance__left .about-bottom__left ul li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: #00BF63;
+    left: 0;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.included-insurance__right {
+    position: relative;
+    height: 595px;
+}
+
+.included-insurance__right-shape {
+    position: absolute;
+    right: 0;
+    z-index: -2;
+    width: 480px;
+    height: 483px;
+    animation: shapeAnimat infinite linear 7s;
+}
+
+@keyframes shapeAnimat {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.included-insurance__right-shape img {
+    width: 480px;
+    height: 483px;
+}
+
+.included-insurance__right-img {
+    height: 593px;
+    width: 666px;
+}
+
+.included-insurance__right-img img {
+    width: inherit;
+    height: inherit;
+    object-fit: cover;
+}
+
+.setting-insurance {
+    background: url('../images/insurance/set-ins-bg.png'), linear-gradient(#1E1E1E, #1E1E1E);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.setting-insurance__info-left {
+    background: linear-gradient(0deg, rgba(233, 188, 71, 0.02), rgba(233, 188, 71, 0.02)), linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.18);
+    border: 2px solid #FFFFFF;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    padding: 27px 33px 23px 42px;
+    width: 598px;
+}
+
+.setting-insurance__info-left-txt .line {
+    width: 57px;
+    height: 2px;
+    background: #FFFFFF;
+}
+
+.setting-insurance__info-left-txt p span {
+    color: #E9BC47;
+}
+/* -------------------------------- */
+
+.setting-insurance__info-left .input {
+    width: 100%;
+    -webkit-appearance: none;
+    color: #FFFFFF;
+    height: 6px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    border-radius: 15px;
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0,0,0,1);
+    overflow: hidden;
+}
+
+.setting-insurance__info-left .input::-webkit-slider-thumb {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    position: relative;
+    box-shadow: -401px 0 0 400px #fff;
+    border: 1px solid #000;
+}
+

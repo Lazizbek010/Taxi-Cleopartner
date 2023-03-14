@@ -1,0 +1,31 @@
+.banner{
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.4) 0%, rgba(0, 0, 0,0.4) 100%),
+    url('../images/faq/faq-bg-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner .faq-to-bottom{
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: grid;
+    place-items: center;
+    opacity: 0.4;
+}
+.banner .faq-to-bottom svg{
+    transform: rotate(90deg);
+}
+.banner .banner__info .faq-banner__title{
+    font-weight: 700;
+    font-size: 113px;
+    line-height: 136px;  
+}
+.faq-app .application{
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%)
+    ,url('../images/faq/faq-bg-banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}

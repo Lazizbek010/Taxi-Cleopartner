@@ -1,0 +1,111 @@
+.banner{
+    background: linear-gradient(180deg, rgba(30, 30, 30, 0.4) 0%, rgba(0, 0, 0,0.4) 100%),
+    url('../images/delivery-images/del-bg-banner.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.delivery-moto{
+    background: url('../images/delivery-images/bg-moto.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.delivery-moto__left{
+    max-width: 700px;
+    background:linear-gradient(rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.3) 100%);
+    backdrop-filter: blur(6px);
+    border-radius: 42px;   
+    padding: 44px 54px;
+
+}
+.delivery-moto__left .about-bottom__left ul li{
+    position: relative;
+}
+.delivery-moto__left .about-bottom__left ul li::before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: #00BF63;
+    left: 0;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.delivery-moto__right{
+    width: 584px;
+    height: 588px;
+    position: relative;
+}
+.delivery-moto__right-shape{
+    position: absolute;
+    width: 463px;
+    height: 463px;
+    z-index: -1;
+    animation: shapeAnimat infinite linear 7s;
+    top: 0;
+    right: 0;
+}
+@keyframes shapeAnimat{
+    0%{
+        transform: rotate(0);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.delivery-moto__right-img{
+    position: relative;
+    width: 516px;
+    height: 550px;
+}
+.delivery-moto__right-img-abso{
+    position: absolute;
+    right: -20px;
+    top: 60px;
+}
+/* ------------------------------------- */
+.delivery-benefits{
+    background: url('../images/delivery-images/bg-delivery-benefits.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.delivery-benefits .advantages__info__item:nth-child(n + 4) .advantages__info__item-img{
+    background: #FFFFFF;
+    box-shadow: 0px 17px 17px rgba(255, 255, 255, 0.28);
+}
+/* -------------------------------------- */
+.faq{
+    background: url('../images/delivery-images/bg-faq.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 69px 0 137px;
+}
+.faq__info li{
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(2px);
+    padding: 26px 50px;
+    transition: .3s;
+}
+.faq__info li p{
+    display: none;
+}
+.faq__info li:nth-child(1){
+    border-radius: 41px 41px 0 0;
+}
+.faq__info li:last-child{
+    border-radius:  0 0 41px 41px;
+}
+.faq__info li p.show{
+    display: block;
+}
+.faq__info__list-item.show span{
+    color: #E9BC47;
+}
+.faq__info__list-item.show svg{
+    transform: rotate(90deg);
+}
+.faq__info__list-item.show svg path{
+    stroke: #E9BC47;
+}
